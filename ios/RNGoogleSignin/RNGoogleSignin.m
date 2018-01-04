@@ -89,6 +89,7 @@ RCT_EXPORT_METHOD(revokeAccess)
                            @"idToken": user.authentication.idToken,
                            @"accessToken": user.authentication.accessToken,
                            @"serverAuthCode": user.serverAuthCode ? user.serverAuthCode : [NSNull null],
+                           @"refreshToken": user.authentication.refreshToken ? user.authentication.refreshToken : [NSNull null],
                            @"accessTokenExpirationDate": [NSNumber numberWithDouble:user.authentication.accessTokenExpirationDate.timeIntervalSinceNow]
                            };
 
